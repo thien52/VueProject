@@ -15,10 +15,11 @@
     <transition name="slide-menu">
       <aside v-if="isMenuOpen" class="sidebar">
         <nav class="main-nav">
+          <router-link to="/" @click="closeMenu">Welcome</router-link>
           <router-link to="/login" @click="closeMenu">Login</router-link>
-          <router-link to="/" @click="closeMenu"> Welcome</router-link>
-          <router-link to="/hello" @click="closeMenu"> HelloWorld</router-link>
-         <router-link to="/sudesnest" @click="closeMenu"> SudesNest</router-link>
+          <router-link to="/hello" @click="closeMenu">HelloWorld</router-link>
+         <router-link to="/sudesnest" @click="closeMenu">SudesNest</router-link>
+         <router-link to="/hotel" @click="closeMenu">Hotel</router-link>
           <!-- Thêm các link khác nếu cần -->
         </nav>
       </aside>
@@ -128,8 +129,7 @@ const closeMenu = () => {
 /* Nội dung chính */
 .main-content {
   padding: 20px;
-  padding-top: 70px; /* Đảm bảo nội dung không bị che bởi nút toggle cố định ở trên */
-  /* Không cần transition cho margin-left nữa */
+ 
 }
 
 /* Overlay Style */

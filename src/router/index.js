@@ -5,6 +5,7 @@ import HelloWorld from '../components/HelloWorld.vue'
 import TheWelcome from '../components/TheWelcome.vue' // Tương tự, kiểm tra đường dẫn cho TheWelcome.vue
 import Login from '../components/Login.vue'
 import SudesNest from '../components/SudesNest.vue'
+import Hotel from '../components/Hotel.vue'
 
 const routes = [
   {
@@ -27,6 +28,11 @@ const routes = [
       path: '/sudesnest',
       name: 'SudesNest',
       component: SudesNest
+    },
+    {
+      path: '/hotel',
+      name: 'Hotel',
+      component: Hotel
     },
 ]
 
