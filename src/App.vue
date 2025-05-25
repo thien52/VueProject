@@ -18,7 +18,7 @@
           <router-link to="/login" @click="closeMenu">Login</router-link>
           <router-link to="/" @click="closeMenu"> Welcome</router-link>
           <router-link to="/hello" @click="closeMenu"> HelloWorld</router-link>
-         
+         <router-link to="/sudesnest" @click="closeMenu"> SudesNest</router-link>
           <!-- Thêm các link khác nếu cần -->
         </nav>
       </aside>
